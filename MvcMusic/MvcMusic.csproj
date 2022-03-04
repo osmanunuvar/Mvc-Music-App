@@ -143,6 +143,10 @@
     <Compile Include="Migrations\202203020330483_database_updated2.Designer.cs">
       <DependentUpon>202203020330483_database_updated2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202203040452354_dataAnnotations_Changed.cs" />
+    <Compile Include="Migrations\202203040452354_dataAnnotations_Changed.Designer.cs">
+      <DependentUpon>202203040452354_dataAnnotations_Changed.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Music.cs" />
     <Compile Include="Models\MusicDbContext.cs" />
@@ -216,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202203020330483_database_updated2.resx">
       <DependentUpon>202203020330483_database_updated2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203040452354_dataAnnotations_Changed.resx">
+      <DependentUpon>202203040452354_dataAnnotations_Changed.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
