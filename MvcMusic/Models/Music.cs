@@ -11,15 +11,13 @@ namespace MvcMusic.Models
     {
         [Key]
         public int ID { get; set; }
-        [Required, StringLength(60, MinimumLength = 3)]
+        [Required, StringLength(60, MinimumLength = 3),Display(Name ="Şarkı Adı")]
         public string Title { get; set; }
-        [MaxLength(50)]
-        [Required]
+        [MaxLength(50),Display(Name ="Sanatçı")]
         public string Artist { get; set; }
-        [Display(Name = "Release Date"), DataType(DataType.Date)]
+        [Display(Name = "Çıkış Tarihi"), DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
-        [MaxLength(50)]
-        [Required]
+        [MaxLength(50),Display(Name = "Şarkı Türü")]
         public string Genre { get; set; }
 
 

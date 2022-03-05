@@ -60,16 +60,8 @@ namespace MvcMusic.Controllers
         // GET: Musics/Edit/5
         public ActionResult Edit(int? id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Music music = db.Musics.Find(id);
-            if (music == null)
-            {
-                return HttpNotFound();
-            }
-            return View(music);
+    
+            return View(new EditMusicViewModel {ListItems= new List<SelectListItem> { new SelectListItem { Text = "Pop", Value = "Pop" } } });
         }
 
         // POST: Musics/Edit/5
