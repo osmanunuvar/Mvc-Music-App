@@ -18,7 +18,7 @@ namespace MvcMusic.Controllers
         // GET: Musics
         public ActionResult Index(string search)
         {
-            return View(db.Musics.Where(x=>x.Title.Contains(search)||x.Artist.Contains(search) || search==null).ToList());
+            return View(db.Musics.Where(x => x.Title.Contains(search) || x.Artist.Contains(search) || search == null).ToList());
         }
 
         // GET: Musics/Details/5
@@ -60,22 +60,48 @@ namespace MvcMusic.Controllers
         // GET: Musics/Edit/5
         public ActionResult Edit(int? id)
         {
-    
-            return View(new EditMusicViewModel {ListItems= new List<SelectListItem> { new SelectListItem { Text = "Pop", Value = "Pop" } } });
+
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Music music = db.Musics.Find(id);
+            if (music == null)
+            {
+                return HttpNotFound();
+            }
+            return View(new EditMusicViewModel
+            {
+                Artist= music.Artist,
+                Title=music.Title,
+                Genre= music.Genre,
+                ReleaseDate=music.ReleaseDate,
+                ID=music.ID,
+                ListItems = new List<SelectListItem> { new SelectListItem { Text = "Pop", Value = "Pop" } }
+            });
         }
 
         // POST: Musics/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Title,Artist,ReleaseDate,Genre")] Music music)
+        public ActionResult Edit([Bind(Include = "ID,Title,Artist,ReleaseDate,Genre")] EditMusicViewModel musicViewModel)
         {
             if (ModelState.IsValid)
             {
+                Music music = db.Musics.Find(musicViewModel.ID);
+                if (music == null)
+                {
+                    return HttpNotFound();
+                }
+                music.Artist = musicViewModel.Artist;
+                music.Genre = musicViewModel.Genre;
+                music.ReleaseDate = musicViewModel.ReleaseDate;
+                music.Title = musicViewModel.Title;
                 db.Entry(music).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(music);
+            return View(musicViewModel);
         }
 
         // GET: Musics/Delete/5

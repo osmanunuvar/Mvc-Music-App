@@ -147,11 +147,20 @@
     <Compile Include="Migrations\202203040452354_dataAnnotations_Changed.Designer.cs">
       <DependentUpon>202203040452354_dataAnnotations_Changed.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202203040531045_dataAnnotations_Changed1.cs" />
+    <Compile Include="Migrations\202203040531045_dataAnnotations_Changed1.Designer.cs">
+      <DependentUpon>202203040531045_dataAnnotations_Changed1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203040532524_Model_displayName_Added.cs" />
+    <Compile Include="Migrations\202203040532524_Model_displayName_Added.Designer.cs">
+      <DependentUpon>202203040532524_Model_displayName_Added.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Music.cs" />
     <Compile Include="Models\MusicDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\CreateMusicViewModel.cs" />
+    <Compile Include="ViewModels\EditMusicViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -223,6 +232,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202203040452354_dataAnnotations_Changed.resx">
       <DependentUpon>202203040452354_dataAnnotations_Changed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203040531045_dataAnnotations_Changed1.resx">
+      <DependentUpon>202203040531045_dataAnnotations_Changed1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203040532524_Model_displayName_Added.resx">
+      <DependentUpon>202203040532524_Model_displayName_Added.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

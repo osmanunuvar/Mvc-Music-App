@@ -163,13 +163,15 @@ C:\Users\asus\OneDrive\Masaüstü\MvcMusic\MvcMusic\bin\System.Web.WebPages.Razo
 C:\Users\asus\OneDrive\Masaüstü\MvcMusic\MvcMusic\bin\Newtonsoft.Json.xml
 C:\Users\asus\OneDrive\Masaüstü\MvcMusic\MvcMusic\bin\Antlr3.Runtime.pdb
 C:\Users\asus\OneDrive\Masaüstü\MvcMusic\MvcMusic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\asus\OneDrive\Masaüstü\MvcMusic\MvcMusic\obj\Debug\MvcMusic.csproj.AssemblyReference.cache
 C:\Users\asus\OneDrive\Masaüstü\MvcMusic\MvcMusic\obj\Debug\MvcMusic.Migrations.database_created.resources
 C:\Users\asus\OneDrive\Masaüstü\MvcMusic\MvcMusic\obj\Debug\MvcMusic.Migrations.database_updated.resources
 C:\Users\asus\OneDrive\Masaüstü\MvcMusic\MvcMusic\obj\Debug\MvcMusic.Migrations.database_updated2.resources
+C:\Users\asus\OneDrive\Masaüstü\MvcMusic\MvcMusic\obj\Debug\MvcMusic.Migrations.dataAnnotations_Changed.resources
+C:\Users\asus\OneDrive\Masaüstü\MvcMusic\MvcMusic\obj\Debug\MvcMusic.Migrations.dataAnnotations_Changed1.resources
+C:\Users\asus\OneDrive\Masaüstü\MvcMusic\MvcMusic\obj\Debug\MvcMusic.Migrations.Model_displayName_Added.resources
 C:\Users\asus\OneDrive\Masaüstü\MvcMusic\MvcMusic\obj\Debug\MvcMusic.csproj.GenerateResource.cache
 C:\Users\asus\OneDrive\Masaüstü\MvcMusic\MvcMusic\obj\Debug\MvcMusic.csproj.CoreCompileInputs.cache
 C:\Users\asus\OneDrive\Masaüstü\MvcMusic\MvcMusic\obj\Debug\MvcMusic.csproj.CopyComplete
 C:\Users\asus\OneDrive\Masaüstü\MvcMusic\MvcMusic\obj\Debug\MvcMusic.dll
 C:\Users\asus\OneDrive\Masaüstü\MvcMusic\MvcMusic\obj\Debug\MvcMusic.pdb
-C:\Users\asus\OneDrive\Masaüstü\MvcMusic\MvcMusic\obj\Debug\MvcMusic.Migrations.dataAnnotations_Changed.resources
+C:\Users\asus\OneDrive\Masaüstü\MvcMusic\MvcMusic\obj\Debug\MvcMusic.csproj.AssemblyReference.cache

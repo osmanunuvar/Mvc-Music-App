@@ -9,6 +9,7 @@ namespace MvcMusic.ViewModels
 {
     public class EditMusicViewModel
     {
+        public int ID { get; set; }
         [Required, StringLength(60, MinimumLength = 3)]
         public string Title { get; set; }
         [MaxLength(50)]
